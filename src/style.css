@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #eef2f7, #d9e2ec);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #646cff;
+  color: white;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #4f57d3;
+}
+
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  padding: 12px 14px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  background: #f7f9fc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition:
+    transform 0.1s,
+    background 0.2s;
+}
+
+li:hover {
+  background: #eef2ff;
+  transform: translateX(3px);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.filters button {
+  background: #e5e7eb;
+  color: #333;
+}
+
+.filters button:hover {
+  background: #d1d5db;
+}

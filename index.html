@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TS Playground</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>📋 Task Manager</h1>
+
+      <div class="task-input">
+        <input id="taskInput" type="text" placeholder="Enter a task..." />
+
+        <button id="addBtn">Add</button>
+      </div>
+
+      <div class="filters">
+        <button data-filter="all">All</button>
+        <button data-filter="active">Active</button>
+        <button data-filter="completed">Completed</button>
+      </div>
+
+      <ul id="taskList"></ul>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
