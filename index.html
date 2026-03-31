@@ -7,22 +7,37 @@
     <title>TS Playground</title>
   </head>
   <body>
-    <div class="container">
-      <h1>📋 Task Manager</h1>
+    <!-- <div class="app">
+      <h1>Task Manager</h1>
 
-      <div class="task-input">
-        <input id="taskInput" type="text" placeholder="Enter a task..." />
-
+      <div class="todo-input">
+        <input type="text" id="taskInput" placeholder="Enter a task..." />
         <button id="addBtn">Add</button>
       </div>
 
       <div class="filters">
-        <button data-filter="all">All</button>
+        <button data-filter="all" class="active">All</button>
         <button data-filter="active">Active</button>
         <button data-filter="completed">Completed</button>
       </div>
 
       <ul id="taskList"></ul>
+    </div> -->
+
+    <div class="app">
+      <h1>User Dashboard</h1>
+
+      <button id="loadBtn" class="btn">Load Users</button>
+
+      <div id="status" class="status"></div>
+
+      <div class="content">
+        <ul id="userList" class="user-list"></ul>
+
+        <div id="userDetails" class="user-details">
+          <p>Select a user to see details</p>
+        </div>
+      </div>
     </div>
 
     <script type="module" src="/src/main.ts"></script>
